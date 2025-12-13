@@ -1,10 +1,10 @@
 import boto3
 
-svc = boto3.client('iam')
-
 def iam():
-    return svc.list_users()
-    
+    svc = boto3.client("iam")
+    response = svc.list_users()
+    for user in response["Users"]:
+        print(user["UserName"])
 
-if __name__=="__init__":
-    print(iam())
+if __name__ == "__main__":
+    iam()
