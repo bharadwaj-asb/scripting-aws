@@ -5,3 +5,5 @@ This repository contains the Python scripts that can be used to perform basic se
 1. IAM: Identifies which IAM users have MFA enabled and disabled.
 
 2. Security Groups: Identifies which security groups have inbound ports 22 (SSH) and 3389 (RDP) open. 
+
+3. S3: Identifies default encryption settings and public access settings for S3 buckets.
